@@ -1,0 +1,131 @@
+
+    <!-- ....Hero-section starts here....  -->
+
+    <div class="container-fluid hero-section-iv" style="background-image: url('{{page.metafields.image.heroimage}}');">
+   <a href="/collections/iv-therapy" >  <div class="mobile_img"> <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/IV_TherapyArtboard_7.jpg?v=1630152682">  </div> </a>
+        <div class="row ">
+            <div class="col-md-8 ms-auto text-center mainherobar-iv ">
+                <h2> {{page.metafields.ivtherapy.herohead}}</h2>
+                <p class="px-5 ">{{page.metafields.ivtherapy.herosubtext}}
+                </p>
+                <button onclick="javascript:location.href='{{page.metafields.ivtherapy.herobtnurl}}'" class="mt-2">{{page.metafields.ivtherapy.herobtn}}</button>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- ....Hero-section ends here....  -->
+
+
+    <!-- ....Hydrate-section starts here....  -->
+
+    <div class="container-fluid hydratesection-iv">
+        <button class="visitinbutton"><span> {{page.metafields.ivtherapy.visitinbutton}}</span></button>
+        <div class="row px-lg-5 px-2 hydratedestailsection-iv py-5">
+            <div class="col-lg-4 text-center my-5 px-lg-5">
+                <img class="py-3" src="{{page.metafields.ivtherapy.featureimage1}}" alt="section1image">
+                <h4>{{page.metafields.ivtherapy.feat1}}</h4>
+                <p>{{page.metafields.ivtherapy.feat1text}}</p>
+            </div>
+            <div class="col-lg-4  text-center my-5 border-start border-end px-lg-5">
+                <img class="py-3"  src="{{page.metafields.ivtherapy.featureimage2}}" alt="section2image">
+                <h4>{{page.metafields.ivtherapy.feature2}}</h4>
+                <p>{{page.metafields.ivtherapy.feature2text}}</p>
+            </div>
+            <div class="col-lg-4  text-center my-5 px-lg-5">
+                <img class="py-3"  src="{{page.metafields.ivtherapy.featureimage3}}" alt="section3image">
+                <h4>{{page.metafields.ivtherapy.feature3}}</h4>
+                <p>{{page.metafields.ivtherapy.feature3text}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ....Hydrate-section ends here....  -->
+<!-- 4 SECTIONS OF JOYS FOR IV -->
+
+<section class="benefits">
+<div class="container-fluid" >
+    <div class="row">
+      <div class="col-lg-6 py-5 py-lg-0 "> <img src="{{page.metafields.ivpage.benefitimage[0]}}" alt=""></div>
+      <div class="  py-5 py-lg-0  col-lg-6 text-center content"> <h2> {{page.metafields.ivpage.benefithead[0]}}</h2> 
+        <p>{{page.metafields.ivpage.benefit[0]}}</p>
+        <button class="gr-btn btn btn-primary" onclick="javascript:location.href='{{page.metafields.ivpage.buttonurl[0]}}'">{{page.metafields.ivpage.button[0]}}</button>
+       </div>
+    </div>
+    <div class="row">
+       <div class="	 py-5 py-lg-0 	d-block d-lg-none col-lg-6 "><img src="{{page.metafields.ivpage.benefitimage[1]}}" alt=""></div>
+      <div class="col-lg-6  py-5 py-lg-0 text-center content"> <h2 class="blu"> {{page.metafields.ivpage.benefithead[1]}}</h2> 
+        <p>{{page.metafields.ivpage.benefit[1]}}</p>
+        <button class="gr-btn btn btn-primary" onclick="javascript:location.href='{{page.metafields.ivpage.buttonurl[1]}}'">{{page.metafields.ivpage.button[1]}}</button>
+       </div>
+      <div class="	d-none d-lg-block  col-lg-6 py-5 py-lg-0 "><img src="{{page.metafields.ivpage.benefitimage[1]}}" alt=""></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 py-5 py-lg-0"><img src="{{page.metafields.ivpage.benefitimage[2]}}" alt=""></div>
+      <div class="col-lg-6 py-5 py-lg-0 text-center content"> <h2>{{page.metafields.ivpage.benefithead[2]}}</h2> 
+        <p>{{page.metafields.ivpage.benefit[2]}}</p>
+        <button class="gr-btn btn btn-primary" onclick="javascript:location.href='{{page.metafields.ivpage.buttonurl[2]}}'">{{page.metafields.ivpage.button[2]}}</button>
+       </div>
+    </div>
+    <div class="row">
+         <div class=" 	d-block d-lg-none  col-lg-6 py-5 py-lg-0"><img src="{{page.metafields.ivpage.benefitimage[3]}}" alt=""></div>
+      <div class="col-lg-6 py-5 py-lg-0 text-center content"> <h2 class="blu" > {{page.metafields.ivpage.benefithead[3]}}</h2> 
+        <p>{{page.metafields.ivpage.benefit[3]}}</p>
+        <button class="gr-btn btn btn-primary" onclick="javascript:location.href='{{page.metafields.ivpage.buttonurl[3]}}'">{{page.metafields.ivpage.button[3]}}</button>
+       </div>
+      <div class=" 	d-none d-lg-block  col-lg-6 py-5 py-lg-0"><img src="{{page.metafields.ivpage.benefitimage[3]}}" alt=""></div>
+    </div>
+  </div>
+
+
+
+</section>
+ 
+
+
+          
+
+
+  <!-- customersreviewsection section starts here .....  -->
+  <section class="mt-5 mt-md-0" id="customersreviewsection-iv">
+    <div class="container">
+      <div class="row py-5">
+        <h1 class="text-center ">{{page.metafields.ivtherapy.reviewshead}}</h1>
+        <div class="customers-review py-5">
+          
+          {% assign variable = 0 %}
+{% for value in page.metafields.ivtherapy.name %}
+
+          <div class="bg-white   clienttestimonials  p-4 mx-3">
+            <div class="d-xl-flex  mx-auto">
+              <div class="ms-0 ms-lg-4 ms-xl-0">
+                <img src="{{page.metafields.ivt.image[variable]}}" alt="">
+              </div>
+              <div>
+                <div class="px-lg-4">
+                  <div class="clientinfo">
+                    <h5 class="fw-bold p-0 m-0">{{value}}</h5>
+                    <P class="p-0 m-0">{{page.metafields.ivt.customer[variable]}}</P>
+                  </div>
+                  <div class="d-flex text-center">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="" class="mx-1">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="" class="mx-1">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <p>{{page.metafields.ivt.review[variable]}}</p>
+            </div>
+          </div>
+          
+           {% assign variable = variable | plus: 1 %}
+{% endfor %}
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- customersreviewsection section ends here -->

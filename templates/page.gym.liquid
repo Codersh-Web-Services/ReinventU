@@ -1,0 +1,159 @@
+{% assign miami_bundle = all_products["miami-vice-bundle"] %}
+{% assign mens_bundle = all_products["mens-essentials-bundle"] %}
+{% assign womens_bundle = all_products["womens-essentials-bundle"] %}
+{% assign og_bundle = all_products["the-og-bundle"] %}
+{% assign shed_bundle = all_products["shed-the-wait-bundle"] %}
+{% assign load_bundle = all_products["load-up-on-gear-bundle"] %}
+
+
+
+ <section class="gym-hero" >
+        <img width="100%" src="{{"gymhero.jpg" | file_url}}" class="gym-hero-img" alt="gym hero">
+        <div class="centered">
+            <h2 class="Organetto_UltraBold  h1 gr-text" >BUNDLE & SAVE</h2>
+            <h3 class="gr-text h3">Save more with our best selling products bundled into one</h3>
+      
+        </div>
+
+        
+    </section>
+    <section class="vice-bundle">
+        <div class="container">
+            <div class="row ">
+                <div class="gym-content col-sm-12 col-md-6"><h3 class="h1 text-white Organetto_UltraBold">Miami vice Bundle</h3>
+                  <div class="mobile-display"> <img src="{{"tshirt-bundle.png" | file_url}}" alt="" class="miami-ts"></div>
+                <ul class="text-white">
+                    <li>Miami Vice Flavor Energy Pre-workout</li>
+                    <li>White Miami Skyline Tee</li>
+                    <li>Black Miami Vice Retro Tee</li>
+                </ul>
+                  <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold text-white text-center h2">Only {{miami_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold gym-btn" onclick="javascript:location.href='https://reinventu.pro/products/miami-vice-bundle'"> <span class="gr-text"> Get IT NOW </span></button></div>
+                  <div class="col-6 full-width-mobile"><div class="bordered-dot ">SAVE <span class="green-dollar">${{miami_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mobile-display-none">
+                    <img src="{{"tshirt-bundle.png" | file_url}}" alt="" class="miami-ts">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="mens-bundle">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6">
+                    <img src="{{"mens.png" | file_url}}" alt="" class="miami-ts">
+                </div>
+                <div class="gym-content col-sm-12 col-md-6"><h3 class="h1 gr-text Organetto_UltraBold">Men’s essentials BUNDLE</h3>
+                <ul class="gr-text">
+                  <li><div class="gr-text">Green Apple Greens With Super Foods + Probiotics </div> </li>
+                  <li><div class="gr-text">Men’s Health Essential Vitamins </div></li>
+                  <li><div class="gr-text">All-In-One Complete Heart Health</div></li>
+                </ul>
+                 <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold gr-text text-center h2">Only {{mens_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold gym-btn2" onclick="javascript:location.href='https://reinventu.pro/products/mens-essentials-bundle'"> <span class="text-white"> Get IT NOW </span></button></div>
+                  <div class="col-6 full-width-mobile"><div class="bordered-dot dot2 "><span class="gr-text">SAVE </span> <span class="green-dollar">${{mens_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="women-bundle">
+        <div class="container">
+            <div class="row ">
+                <div class="gym-content col-sm-12 col-md-6"><h3 class="h1 text-white Organetto_UltraBold" >WOMENS ESSENTIALS BUNDLE</h3>
+                   <div class="mobile-display">
+                    <img src="{{"women-bundle-img.png" | file_url}}" alt="" class="miami-ts">
+                   </div>
+                <ul class="text-white">
+                    <li>Green Apple Greens With Super Foods + Probiotics </li>
+                    <li>Women’s Health Essential Vitamins</li>
+                    <li>All-In-One Complete Heart Health</li>
+                </ul>
+               <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold text-white text-center h2">Only {{womens_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold gym-btn" onclick="javascript:location.href='https://reinventu.pro/products/womens-essentials-bundle'"> <span class="gr-text"> Get IT NOW </span></button></div>
+                  <div class="col-6 full-width-mobile"><div class="bordered-dot ">SAVE <span class="green-dollar">${{womens_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mobile-display-none">
+                    <img src="{{"women-bundle-img.png" | file_url}}" alt="" class="miami-ts">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="og-bundle">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6">
+                    <img src="{{"og.png" | file_url}}" alt="" class="miami-ts">
+                </div>
+                <div class="gym-content col-sm-12 col-md-6"><h3 class="h1 gr-text Organetto_UltraBold">The Og Bundle</h3>
+                <ul class=" gr-text">
+                  <li><div class="gr-text">Miami Vice Flavor Energy Pre-Workout</div></li>
+                  <li><div class="gr-text">Green Apple Greens With Super Foods + Probiotics </div></li>
+                  <li><div class="gr-text">Healthy Weight Loss Support Fat Burner</div></li>
+                </ul>
+                 <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold gr-text text-center h2">Only {{og_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold gym-btn2" onclick="javascript:location.href='https://reinventu.pro/products/the-og-bundle'"> <span class="text-white"> Get IT NOW </span></button></div>
+                  <div class="col-6 full-width-mobile"><div class="bordered-dot dot2 "><span class="gr-text">SAVE </span><span class="green-dollar">${{og_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="Shed-bundle">
+        <div class="container">
+            <div class="row ">
+                <div class="gym-content col-sm-12 col-md-6"><h3 class="h1 text-white Organetto_UltraBold">SHED THE WAIT BUNDLE</h3>
+                   <div class="mobile-display">
+                    <img src="{{"shed-bundle-img.png" | file_url }}" alt="" class="miami-ts">
+                </div>
+                <ul class="text-white">
+                    <li>Healthy Weight Loss Support Fat Burner</li>
+                    <li>Green Apple Greens With Super Foods + Probiotics </li>
+                    <li>Miami Vice Flavor Energy Pre-Workout</li>
+                  <li>Ready To Drink Berry Energy Shot 12-Pack</li>
+                </ul>
+                <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold text-white text-center h2">Only {{shed_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold gym-btn" onclick="javascript:location.href='https://reinventu.pro/products/shed-the-wait-bundle'"> <span class="gr-text"> Get IT NOW </span></button></div>
+                  <div class="col-6 full-width-mobile"><div class="bordered-dot ">SAVE <span class="green-dollar">${{shed_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6  mobile-display-none">
+                    <img src="{{"shed-bundle-img.png" | file_url }}" alt="" class="miami-ts">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gear-bundle">
+        <div class="container">
+            <div class="row ">
+                
+                <div class="col-sm-12 col-md-6">
+                    <img src="{{"gear-bundle-img.png" | file_url}}" alt="" class="miami-ts">
+                </div>
+              <div class="col-sm-12 col-md-6 gym-content"><h3 class="h1 gr-text Organetto_UltraBold">LOAD UP ON GEAR BUNDLE</h3>
+                <ul class=" gr-text ">
+                  <li><div class="gr-text">White “Be Fearless” Tee</div></li>
+                  <li><div class="gr-text">Black Miami Vice Retro Tee</div></li>
+                  <li><div class="gr-text">White Miami Skyline Tee</div></li>
+                  <li><div class="gr-text">“Visualize Your Highest Self” Tee</div></li>
+                </ul>
+                 <div class="row">
+                  <div class="col-6 full-width-mobile"> <div class="large-text Organetto_UltraBold gr-text text-center h2">Only {{load_bundle.price | money}}</div> 
+                  <button class="Organetto_UltraBold  gym-btn2" onclick="javascript:location.href='/products/load-up-on-gear-bundle'"> <span class="text-white"> Get IT NOW </span></button></div>
+                   <div class="col-6 full-width-mobile"><div class="bordered-dot dot2 "><span class="gr-text">SAVE </span> <span class="green-dollar">${{load_bundle.metafields.product.bundlesave}}</span></div></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>

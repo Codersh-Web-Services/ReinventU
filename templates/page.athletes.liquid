@@ -1,0 +1,75 @@
+
+     
+
+ 
+
+		{% comment %}
+        {{ page.content }}
+		{% endcomment %}
+   
+    
+        <!-- ....... meet the athlete section starts here.......  -->
+    <section id="athelte-meet">
+        <div class="container">
+            <div class="row text-center py-5">
+
+                <div class="aboutheading border col-10 col-lg-7 mx-auto   py-1 px-1">
+                   <div class="ab-wrapper"> <h2 class="text-white Organetto_UltraBold">MEET THE <span> ATHLETES</span></h2>
+                     <h4 class="text-white">Our athlete eat, sleep, and breathe fitness and wellness</h4> </div>
+                </div>
+            </div>
+            <div class="all-athlete-slide ">
+             <div class="row">
+                   
+               		 {% assign variable = 0 %}
+{% for value in page.metafields.athlete.image %}
+               
+ <div class="ath-person col-md-6 col-xl-4">
+                         <div class="ath-inner">  
+     <a class="ath-ig" target="_blank" href="{{page.metafields.athlete.url[variable]}}"><img src="{{value}}" alt="">
+                           </a>
+                        <div class="ath-menu2 text-center pt-3">
+                            <h2><span class="fw-bold">{{page.metafields.athelete.name[variable]}}</span> <span class="fw-light"> {{page.metafields.athelete.lastname[variable]}} </span><a
+                                href="{{page.metafields.athlete.url[variable]}}" target="_blank"> <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/instagram_icon_8687dcf0-108f-43de-a7d8-9964f6ee09d8.png?v=1627546668" alt=""> </a> </h2> 
+                        </div>
+                            </div> 
+
+ </div>      
+	
+ {% assign variable = variable | plus: 1 %}
+{% endfor %}
+               
+                
+                
+                
+               
+              
+              </div>
+        </div>
+        </div>
+    </section>
+    <!-- ....... meet the athlete section starts here.......  -->
+
+
+    <!-- ....... yourturn section starts here.......  -->
+    <section id="yourturn-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 text-center mx-auto">
+                    <h2 class="Organetto_UltraBold">ITS YOUR <span> TURN</span></h2>
+                    <h4>ReinventU is always looking for <span class="fw-bold">superstar athletes like</span> you
+                        to join us a brand ambassador</h4>
+
+                    <div class="my-4 p-4">
+                        <div action="">
+<!--                             <input type="text" placeholder="First Name" class="w-100 px-4 py-3">
+                            <input type="email" placeholder="Email" class="w-100 px-4 py-3 my-3">
+                            <input type="tel" placeholder="Phone Number" class="w-100 px-4 py-3"> <br> -->
+                            <button class=" px-4 py-3 my-3" onclick="javascript:location.href='https://reinventu.pro/pages/register-affiliate-account'">BECOME AN ATHLETE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- .......yourturn athlete section ends here.......  -->

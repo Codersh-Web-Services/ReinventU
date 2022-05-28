@@ -1,0 +1,75 @@
+ <!-- atheleteform section starts -->
+  <section id="atheleteform">
+    <div class="container pt-4 pb-3">
+      <div class="row ">
+        <div class="col-lg-2 d-none d-xl-flex bottle">
+          <img src="{{section.settings.energybottle1 | img_url: '450x' }}" alt="reinventu bottles">
+        </div>
+        <div class="col-xl-8 mx-auto text-center px-4 athletefomsection">
+          <h1 class="Organetto_UltraBold">ARE <span> YOU </span> NEXT?</h1>
+          <p >ReinventU is always looking for <strong> superstar athletes </strong> like you to join us as a brand
+            ambassador.</p>
+          
+          <div class="col-12 mx-auto formsection mt-2">
+            <div  id="ContactForm"  class="contact-form" ><input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
+
+   
+<!--               <input placeholder="First Name" class="px-md-4 py-2 " type="text" id="ContactForm-name" name="contact[Name]" value="">
+   <input placeholder="Email" class="px-md-4 py-2 my-1" type="email" id="ContactForm-email" name="contact[email]" autocorrect="off" autocapitalize="off" value="" aria-required="true">
+   <input placeholder="Phone Number"  class="px-md-4 py-2" type="tel" id="ContactForm-phone" name="contact[Phone Number]" pattern="[0-9\-]*" value=""> -->
+  <button class="px-4 py-2 mt-3 mb-3" onclick="javascript:location.href='/pages/register-affiliate-account'" type="submit" > {{ section.settings.button}} </button>
+              
+</div>
+      
+          </div>
+        </div>
+        <div class="col-lg-2 d-none d-xl-flex bottle">
+          <img src="{{section.settings.energybottle2 | img_url: '420x' }}" alt="reinventu bottles">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- atheleteform section ends -->
+
+ 
+
+
+
+
+{% schema %}
+  {
+    "name": "Become Athelete",
+    "settings": [
+   
+{
+  "type": "image_picker",
+  "id": "energybottle1",
+  "label": "energybottles"
+},
+   
+{
+  "type": "image_picker",
+  "id": "energybottle2",
+  "label": "energybottles"
+}
+,
+{
+  "type": "text",
+  "id": "button",
+  "label": "button title"
+}
+],
+ 	"presets": [
+      {
+        "name": "Become an athelete",
+        "category": "Forms"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

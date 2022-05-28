@@ -1,0 +1,306 @@
+
+    
+    <!-- Hero section starts here....  -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mainhero-section">
+                    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/Layer_31.png?v=1628165160" alt="">
+                    <h2 class="text-white Organetto_UltraBold my-2">{{page.metafields.test.Head}}</h2>
+                    <p class="text-white w-75 mx-auto  font-monteserrat">{{page.metafields.test.SubHead}} </p>
+                    <div class="mt-5"> <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/sliderarrowbutton.png?v=1628165160" alt=""> </div>
+                    <div> <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/whitearrow.png?v=1628165160" alt=""> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero section ends here....  -->
+
+
+    <!-- Aboutvideo section starts here....  -->
+    <div class="aboutvideo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-auto hormone-video">
+                    <video autoplay muted  width="80%" height="auto" controls>
+                        <source src="{{page.metafields.test.herovideo}}" type="video/mp4">
+                    </video>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aboutvideo section ends here....  -->
+
+
+    <!-- Askquestion section starts here....  -->
+    <div class="askquestion-section">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-12  pt-5 text-white text-center font-monteserrat">
+                    <h6 class=" pt-5 pb-2 fw-bold">{{page.metafields.testo.formhead}}</h6>
+                    <hr>
+                    <p class="w-75 mx-auto fw-light ">{{page.metafields.testoform.formdescription}}</p>
+                    <form action="">
+                        <div class="d-lg-flex">
+                            <div class="col-lg-6 p-2">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="col-lg-6 p-2">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="d-lg-flex">
+                            <div class="col-lg-6 p-2">
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                            <div class="col-lg-6 p-2">
+                                <input type="text" placeholder="Email">
+                            </div>
+                      </div>
+                      <button class=" hero-btn"> click here to submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+     <!-- Askquestion section ends here....  -->
+      <!-- therapy plans -->
+<section class="therapy-plans container">
+    <div class="row therapy-cols"> 
+    <div class="col-lg-3">
+      <div class="therapy-plans-detail-box">
+        <h4>Price</h4>
+        <ul>
+            {% for value in page.metafields.teststo.pricesval  %}
+            <li>	{{value}}</li>
+            {% endfor %}
+            
+            
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 my-4 my-lg-0">
+      <div class="therapy-plans-box">
+        <div class="therapy-plan-img">
+    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/price_logo1.png?v=1628177215"></div>
+        <h4>{{page.metafields.test.test}}</h4>
+        <ul>
+            {% for value in  page.metafields.testo.pro %}
+            <li>	{{value}}</li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="therapy-plans-box">
+            
+        <div class="therapy-plan-img">
+    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/price_logo2.png?v=1628177215"></div>
+        <h4>{{page.metafields.test.competitortext}}</h4>
+        <ul>
+            {% for value in page.metafields.testo.comptesto %}
+            <li>	{{value}}</li>
+            {% endfor %}
+        </ul>
+                
+      
+    </div>
+      </div>
+</div>
+</section>
+      
+<!--       steps -->
+      <div class="container steps-global">
+
+  
+        <section class="simple-steps">
+   
+   
+       <div class="text-center">
+           <h2 class="step-head"> {{page.metafields.test.stephead}}</h2>
+       </div>
+       <div class="steps ">
+        <div class="step-data row">
+              <div class="col-lg-8 col-sm-12">
+               <div class="content row "> <div class="col-lg-2 col-sm-12"><img  src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/step_number1.png?v=1628161613" alt=""></div>
+             <div class="col-lg-10 col-sm-12 step-text py-sm-5" >
+                   <h2 >{{page.metafields.test.step1}}</h2>
+                    <p>{{page.metafields.test.step1text}}</p>
+             </div>
+            </div>
+               </div>
+               <div class="col-lg-4 col-sm-10 images text-center">
+                 <img src="{{page.metafields.test.step1image}}" alt="qwe">
+             </div>
+        </div>
+        <div class="step-data  row">
+         <div class="col-lg-8 col-sm-12">
+       
+             <div class="content row"><div class="col-lg-2 col-sm-12"><img   src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/step_number2.png?v=1628161613" alt=""></div><div class="col-lg-10 col-sm-12  step-text py-sm-5"><h2  > {{page.metafields.test.step2}} </h2> <p>{{page.metafields.test.step2text}}</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-10 images text-center">
+             <img src="{{page.metafields.test.step2image}}" alt="wqer">
+        </div>
+   </div>
+   <div class="step-data  row">
+     <div class="col-lg-8 col-sm-12">
+     
+         <div class="content row "><div class="col-lg-2 col-sm-12"><img   src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/step_number3.png?v=1628161613" alt=""> </div><div class="col-lg-10 col-sm-12  step-text py-sm-5"><h2>{{page.metafields.test.step3}}</h2>
+            <p>{{page.metafields.test.step3text}}</p>
+
+        </div></div>
+      </div>
+      <div class="col-lg-4 col-sm-10 images text-center">
+         <img  src="{{page.metafields.test.step3image}}" alt="qwe">
+    </div>
+ </div>
+ <div class="step-data  row">
+     <div class="col-lg-8 col-sm-12">
+      
+         <div class="content row"><div class="col-lg-2 col-sm-12"> <img   src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/step_number4.png?v=1628161613" alt=""> </div><div class="col-lg-10 col-sm-12  step-text py-sm-5"><h2   >{{page.metafields.test.step4}}</h2> <p>{{page.metafields.test.step4text}}</p></div></div>
+      </div>
+      <div class="col-lg-4 col-sm-10 images text-center">
+         <img  src="{{page.metafields.test.step4image}}" alt="qwe">
+    </div>
+ </div>
+       </div>
+       <div class="step-btn-main">
+            <button class="step-btn ">click here to get started</button> 
+</div>
+   </section>
+       </div>
+  
+     
+
+<!-- percent man -->
+
+<div class="percentman-section">
+    <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/precent_man_bg.jpg?v=1628171936" alt="percent-man">
+    <div class="percent_btn_main">
+      <button class="percent_btn">CLICK HERE TO <span>GET STARTED</span></button>
+    </div>
+  </div>
+
+
+  <section class="faq">
+    <div class="container">
+       <div class="row">
+          <div class="col-12">
+             <h2 class="faq-head"> FRequently asked <span>questions</span></h2>
+             <div class="question-wrapper">
+                <div class="accordion" id="accordionExample">
+                    {% assign variable1 = 0 %}
+                    {% for value in page.metafields.faq.question %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="{{variable1}}">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{variable1}}" aria-expanded="true" aria-controls="collapseOne">
+                           {{value}}
+                           </button>
+                        </h2>
+                        <div id="collapse{{variable1}}" class="accordion-collapse collapse " aria-labelledby="{{variable1}}" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                            {{page.metafields.faq.answer[variable1]}}
+                           </div>
+                        </div>
+                     </div>
+                    
+                    {% assign variable1 = variable1 | plus: 1 %}
+                    {% endfor %}   
+                  
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+ <!-- newclienttestimonials section starts here .....  -->
+    <section class="newclienttestimonials">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-lg-10 col-xl-7 mx-auto text-center testimonialhead pt-5">
+                    <h2 class="text-center Organetto_UltraBold ">HOW IT'S <span class=""> GOING.... </span></h2>
+                    <P class="font-monteserrat">One thing we know is, you’re not alone. We have thousands
+                        of happy customers who have some incredible results with our product!</P>
+                </div>
+                <div class="col-12 mx-auto ">
+                    <div class="customers-review-test0 pb-5">
+                        {% assign variable = 0 %}
+                        {% for value in page.metafields.slidertest.name %}
+                        
+                        <div class="bg-white   clienttestimonials  p-4 mx-3">
+                            <div class="d-xl-flex  mx-auto">
+                                <div class="ms-0 ms-lg-4 ms-xl-0">
+                                    <img src="{{page.metafields.slidertest.image[variable]}}" alt="">
+                                </div>
+                                <div>
+                                    <div class="px-lg-4">
+                                        <div class="clientinfo">
+                                            <h5 class="fw-bold p-0 m-0 Organetto_UltraBold">{{value}}</h5>
+                                            <P class="p-0 m-0 font-monteserrat font-darkblue">{{page.metafields.slidertest.customer[variable]}} </P>
+                                        </div>
+                                        <div class="d-flex text-center">
+                                            <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="blue star">
+                                            <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="blue star" class="mx-1">
+                                            <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="blue star">
+                                            <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="blue star" class="mx-1">
+                                            <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/blue_star.png?v=1628250810" alt="blue star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3 mainreviewtext">
+                                <p class="font-monteserrat ">{{page.metafields.slidertest.review[variable]}}</p>
+                            </div>
+                        </div>
+                        {% assign variable = variable | plus: 1 %}
+                        {% endfor %}   
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn slider-btn">CLICK HERE TO <span>GET STARTED</span></button>
+    </section>
+    <!-- newclienttestimonials section ends here -->
+     <!-- medical advisory Board -->
+
+
+<section class="medical-advisory text-center">
+  <div class="container">
+    <h2 >{{page.metafields.test.medical}}</h2>
+    <div class="dr-img"><img src="{{page.metafields.test.image}}" alt=""></div>
+    <h3 class="dr-name h3">{{page.metafields.test.name}}</h3>
+    <div class="dr-text">{{page.metafields.test.docabout}}</div>
+  </div>
+</section>
+
+
+
+
+<!-- Schedule a visit  -->
+
+
+
+ <div class="testosterone-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="testosterone_details">
+              <h3>{{page.metafields.visit.tetslhead}}</h3>
+              <p>{{page.metafields.visit.description}}</p>
+              <button class="testosterone_btn">{{page.metafields.visit.btn}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+ 
+     
+      

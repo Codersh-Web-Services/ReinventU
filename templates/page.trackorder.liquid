@@ -1,0 +1,72 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="rte py-30 py-md-50">
+        <script>
+function OnSubmitUSPSForm() {
+  event.preventDefault();
+  var USPSTrackingInput = document.getElementById('USPS_Tracking_Form_Input');
+  window.open("https://tools.usps.com/go/TrackConfirmAction.action?tLabels=" + USPSTrackingInput.value, '_blank');
+}
+
+function OnSubmitDHLForm() {
+  event.preventDefault();
+  var DHLTrackingInput = document.getElementById('DHL_Tracking_Form_Input');
+  window.open("https://www.dhl.com/global-en/home/tracking/tracking-ecommerce.html?submit=1&tracking-id=" + DHLTrackingInput.value, '_blank');
+}
+</script>
+
+<div class="row py-5">
+  <div class="col-12 col-md-6 mb-15 mb-md-0">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="m-0">Domestic (USPS)</h5>
+      </div>
+      <div class="card-body">
+        <form id="USPS_Tracking_Form" onsubmit="OnSubmitUSPSForm();">
+          <div class="form-group">
+            <label for="USPS_Tracking_Form_Input">Tracking Number</label>
+            <input type="text" class="form-control" id="USPS_Tracking_Form_Input" aria-describedby="USPStrackingHelp" placeholder="Enter Your USPS Tracking Number" required="">
+            <small id="USPStrackingHelp" class="form-text text-muted">The tracking number can be found in your shipping confirmation email.</small>
+          </div>
+          <button id="Submit_USPS_Tracking_Form" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="m-0">Worldwide (DHL)</h5>
+      </div>
+      <div class="card-body">
+        <form id="DHL_Tracking_Form" onsubmit="OnSubmitDHLForm();">
+          <div class="form-group">
+            <label for="DHL_Tracking_Form_Input">Tracking Number</label>
+            <input type="text" class="form-control" id="DHL_Tracking_Form_Input" aria-describedby="DHLtrackingHelp" placeholder="Enter Your DHL Tracking Number" required="">
+            <small id="DHLtrackingHelp" class="form-text text-muted">The tracking number can be found in your shipping confirmation email.</small>
+          </div>
+          <button id="Submit_DHL_Tracking_Form" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

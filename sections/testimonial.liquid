@@ -1,0 +1,186 @@
+ <!-- customer review section starts -->
+<!--   <section id="ourcustomerreview">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto text-center py-5 ">
+          <h1>WHAT OUR <span> CUSTOMERS </span> THINK...</h1>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- customer review section ends -->
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto text-center pb-3 pt-5  ">
+          <h2 class="gr-text h1 testimonial-head Organetto_UltraBold " >OUR CUSTOMERS ARE LOVING OUR PRODUCTS</h1>
+          <h3 class="gr-text  large-text">Hear it first hand from customers who love our products & which ones they love!</h3>
+		
+        </div>
+      </div>
+    </div>
+
+<!-- clienttestimonials section starts here .....  -->
+  <section id="testimonialsection">
+
+    <div class="testimonial-reviews ">
+
+        {% for block in section.blocks %}
+  <!-- output block content -->
+      <div class="bg-white   clienttestimonials  p-4 mx-3">
+        <div class="d-xl-flex ">
+          <div class="mx-5 mx-md-0">
+            <img class="testimonial-img" src="{{block.settings.image | img_url : 'master'}}" alt="testimonial img">
+          </div>
+          <div>
+            <div class="client-review-wrapper">
+              <div class="clientinfo">
+                <h5 class="fw-bold p-0 m-0 Organetto_UltraBold">{{block.settings.name}}</h5>
+                <div class="whatbought  Organetto_UltraBold ">Bought our {{block.settings.product}}</div>
+<!--                  <P class="p-0 m-0">{{block.settings.customer}}</P> -->
+              </div>
+
+              <div class="testimonial-stars">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="" class="mx-1">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="" class="mx-1">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>{{block.settings.review}}</p>
+        </div>
+        
+        <img class="testimonial-products" src="{{block.settings.product | img_url : "master" }}" alt="review product">
+        <button onclick="javascript:location.href='{{ block.settings.product.url }}'"  class="px-4 py-2 mt-3 mb-3 d-block gym-btn2 text-white mx-auto Organetto_UltraBold " onclick="javascript:href.location='/products/greens'"> TRY IT NOW!</button>
+      </div>
+
+{% endfor %}
+</div>
+    <div class="testimonial-reviews d-none ">
+             {% for block in section.blocks %}
+  <!-- output block content -->
+      <div class="bg-white   clienttestimonials  p-4 mx-3">
+        <div class="d-xl-flex ">
+          <div class="mx-5 mx-md-0">
+            <img src="{{block.settings.image2 | img_url : 'master'}}" alt="">
+          </div>
+          <div>
+            <div class="px-lg-4">
+              <div class="clientinfo">
+                <h5 class="fw-bold p-0 m-0">{{block.settings.name2}}</h5>
+                <P class="p-0 m-0">{{block.settings.customer2}}</P>
+              </div>
+
+              <div class="d-flex ">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="" class="mx-1">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="" class="mx-1">
+                <img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/star.png?v=1627559212" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>{{block.settings.review2}}</p>
+        </div>
+      </div>
+
+{% endfor %}
+
+    </div>
+  </section>
+  <!-- clienttestimonials section starts here .....  -->
+<section class="picture_footer">
+
+<!-- <img src="{{"mobile.png" | file_url}}" class="mobile-img" alt="mobile"> -->
+<img src="https://cdn.shopify.com/s/files/1/0560/3321/4631/files/bgfooter.png?v=1627561175" class="footer-background" alt"footer image">
+</section>
+
+
+{% schema %}
+  {
+    "name": "Testimonials footer",
+    "settings": [],
+"blocks": [
+    {
+      "type": "image",
+      "name": "athlete",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+           "label": "image"
+        },
+       
+        {
+          "type": "text",
+          "id": "name",
+           "label": " name"
+          
+        },
+		{
+		"type": "product",
+		"id": "product",
+		"label": "product"
+		
+		},
+
+		 {
+          "type": "text",
+          "id": "customer",
+           "label": "customer since"
+          
+        },
+		 {
+          "type": "textarea",
+          "id": "review",
+           "label": "review"
+          
+        }, {
+          "type": "image_picker",
+          "id": "image2",
+           "label": "image"
+        },
+{
+          "type": "text",
+          "id": "name2",
+           "label": " name"
+          
+        },
+       
+        {
+          "type": "text",
+          "id": "customer2",
+           "label": "customer since"
+          
+        },
+		 {
+          "type": "textarea",
+          "id": "review2",
+           "label": "review 2"
+          
+        }
+       
+      
+      ]
+    }
+  ],
+	"presets": [
+      {
+        "name": "Testimonial footer",
+        "category": "Testimonials"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

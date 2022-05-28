@@ -1,0 +1,85 @@
+  <!-- athlete section starts here  -->
+  <div id="meetatheletesection">
+    <div class="container-fluid text-center py-5">
+      <div class="row g-0">
+        <h1 class="Organetto_UltraBold pt-4">
+          {{section.settings.main}} 
+       
+        </h1>
+      </div>
+    </div>
+  </div>
+
+<!-- athelte-meet Section Starts here -->
+  <div id="athelte-meet"  class="slick-athletes">
+    <div class="all-athlete-slide atheletes">
+      {% for block in section.blocks %}
+  <!-- output block content -->
+   <div class="ath-person">
+       
+     <a class="ath-ig"  href="https://reinventu.pro/pages/atheletes"> <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" /> </a> 
+        <div class="ath-menu text-center py-2">
+          <h3><span class="fw-bold"> {{block.settings.text1}} </span>  {{block.settings.text2}} </h3>
+        </div>
+   </div>
+{% endfor %}
+
+     
+     
+      
+    </div>
+  </div>
+
+
+
+{% schema %}
+  {
+    "name": "Meet Athletes",
+    "settings": [
+	 {
+          "type": "html",
+          "id": "main",
+           "label": "Heading for introducing athletes"
+          
+        }
+],
+	"presets": [
+      {
+        "name": "Meet athletes",
+        "category": "Athletes"
+      }
+    ],
+	"blocks": [
+    {
+      "type": "image",
+      "name": "athlete",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+           "label": "image"
+        },
+       
+        {
+          "type": "text",
+          "id": "text1",
+           "label": "first name"
+          
+        },
+		 {
+          "type": "text",
+          "id": "text2",
+           "label": "last name"
+          
+        }
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

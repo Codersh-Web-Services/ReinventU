@@ -1,0 +1,59 @@
+<!-- topclients section starts here -->
+  <section id="topclientssection">
+    <div class="container  pt-md-0">
+      <div class="col-12 pt-md-0">
+        
+      </div>
+      <div class=" clients-logo col-12 text-center col-sm-12 col-xl-8 mx-auto d-flex justify-content-between pb-4 align-items-center">
+        <h5 class="text-center text-white my-5">{{section.settings.clienthead}} — </h5>
+        <div class="my-4 my-md-3 border-r">   <img src="{{section.settings.client3 |  img_url: 'master'}}" alt="Client logo" />  </div>
+        <div class="my-4 my-md-3 border-r">  <img src="{{section.settings.client2 |  img_url: 'master'}}" alt="Client logo" /> </div>
+        <div class="my-4 my-md-3" > <img src="{{section.settings.client1 |  img_url: 'master'}}" alt="Client logo" /> </div>
+<!--         <div>  <img src="{{section.settings.client4 |  img_url: 'master'}}" alt="Client logo" /> </div> -->
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+  {
+    "name": "clients",
+    "settings": [{
+  "type": "text",
+  "id": "clienthead",
+  "label": "clients heading"
+},
+	{
+  "type": "image_picker",
+  "id": "client1",
+  "label": "client logo"
+},
+{
+  "type": "image_picker",
+  "id": "client2",
+  "label": "client logo"
+},
+{
+  "type": "image_picker",
+  "id": "client3",
+  "label": "client logo"
+},
+{
+  "type": "image_picker",
+  "id": "client4",
+  "label": "client logo"
+}
+],
+	"presets" : [
+	{
+        "name": "Clients of reinventu",
+        "category": "homepage"
+      }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

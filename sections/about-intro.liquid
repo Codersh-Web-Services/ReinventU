@@ -1,0 +1,53 @@
+
+  <!-- About Section -->
+  <section id="aboutsection" class="text-center">
+    <div class="about_slop">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec_about">
+              <div class="page_title">
+                <h1 class="Organetto_UltraBold">GREATNESS COMES FROM <span class="blue_text">CONSISTANTLY</span>
+                  <br><span class="pink_text">REINVENTING</span> YOURSELF.</h1>
+              </div>
+              <p> {{section.settings.home_about_message}} </p>
+              <button type="button" class="gr-btn btn btn-primary">{{section.settings.button}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+  {
+    "name": "About",
+    "settings": [
+	{
+  "type": "textarea",
+  "id": "home_about_message",
+  "label": "About message",
+  "default": "Welcome to reinventu"
+},
+{
+  "type": "text",
+  "id": "button",
+  "label": "button text",
+  "default": "Get started"
+}
+],
+    "presets": [
+      {
+        "name": "About reinventu",
+        "category": "Forms"
+      }
+    ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
