@@ -1,1 +1,1 @@
-# ReinventU theme files for Shopify
+# ReinventU theme files
