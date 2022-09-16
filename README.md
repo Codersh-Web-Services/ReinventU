@@ -1,7 +1,7 @@
 # ReinventU Storefront - 
 
 - Project Manager - Shah Harsh
-- Lead Dev: Sudeep kuchara
+- Developer: Sudeep kuchara
 - Designer: JT martin
 - HTML Designer - Niket Prajapati
 - QA - Nilesh Thummar
